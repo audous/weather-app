@@ -3,8 +3,8 @@ import keys from "./keys";
 import './WeatherStyle.css';
 
 const api = {
-  key: keys.API_KEY,
-  base: keys.BASE_URL,
+  key: keys.WEATHER_API_KEY,
+  base: keys.WEATHER_BASE_URL,
 };
 
 export default function Weather() {
