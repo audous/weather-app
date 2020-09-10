@@ -2,11 +2,10 @@ import React from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import './ViewStyle.css';
 
-import SubscribersView from './SubscribersView';
-import EditorsView from './EditorsView';
-import AdminsView from './AdminsView';
 import WeatherView from './WeatherView';
-import NasaView from './NasaView';
+import Nasa from '../nasa/Nasa';
+
+import FullWidthGrid from '../base/FullWidthGrid';
 
 /**
  * This is the view organization component. Handle each main component view and routing here.
@@ -19,13 +18,8 @@ export default function DisplayMain() {
       <Route exact path="/" render={props=>(
         <React.Fragment>
           
-          <WeatherView />
-          <NasaView />
+          <FullWidthGrid />
           
-          <SubscribersView />
-          <EditorsView />
-          <AdminsView />
-
         </React.Fragment>
       )} />
 
@@ -37,7 +31,7 @@ export default function DisplayMain() {
 
       <Route exact path="/nasa" render={props=>(
         <React.Fragment>
-          <NasaView />
+          <Nasa />
         </React.Fragment>
       )} />
     
