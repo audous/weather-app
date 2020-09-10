@@ -1,8 +1,8 @@
 .App {
   background-image: linear-gradient(
-      to right,
-      rgba(255, 0, 0, 0.52),
-      rgba(0, 195, 255, 0.73)
+      to top,
+      rgba(16, 56, 138, 0.46),
+      rgba(232, 56, 25, 0.46)
     ),
     url("../../assets/GSFC_20171208_Archive_e001894_orig.jpg");
     background-repeat: no-repeat;
