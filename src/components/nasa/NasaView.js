@@ -16,17 +16,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-const imgAspect = (imgurl) => {
-
-  var img = new Image();
-img.onload = function() {
-  console.log(this.width + 'x' + this.height);
-}
-img.src = imgurl;
-
-
-}
-
 export default function NasaView(props) {
   const classes = useStyles();
   return (
@@ -37,7 +26,7 @@ export default function NasaView(props) {
         </Paper>
       </Grid>
       <Grid item xs={12} sm={6}>
-        <Paper className={classes.paper}><a href={props.url}><img src={props.url} onLoad={imgAspect(props.url)} alt="nasa apod" style={{maxWidth:"100%"}}/></a></Paper>
+        <Paper className={classes.paper}><a href={props.url}><img src={props.url} alt="nasa apod" style={{maxWidth:"100%"}}/></a></Paper>
       </Grid>
       <Grid item xs={12} sm={6}>
         <Paper >
