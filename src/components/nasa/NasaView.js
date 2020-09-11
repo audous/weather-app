@@ -21,7 +21,7 @@ export default function NasaView(props) {
     <Grid container spacing={3} >
       <Grid item xs={12} >
         <Paper className={classes.paper}>
-          <h2>NASA Image of the Day </h2>
+          <h2>NASA Picture of the Day </h2>
         </Paper>
       </Grid>
       <Grid item xs={12} sm={6}>

@@ -34,12 +34,13 @@ export default function Weather() {
       className={
         typeof weather.main != "undefined"
           ? weather.main.temp > 18
-            ? "App hot"
-            : "App cold"
+            ? "weather hot"
+            : "weather cold"
           : ""
       }
     >
-      <main>
+      <div>
+        Enter a City to get Weather
         <div className="search-container">
           <input
             type="text"
@@ -68,7 +69,7 @@ export default function Weather() {
         ) : (
           ""
         )}
-      </main>
+      </div>
     </div>
   );
 };
