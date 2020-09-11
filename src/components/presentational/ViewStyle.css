@@ -1,11 +1,9 @@
-.App {
-  background-image: linear-gradient(
-      to top,
-      rgba(16, 56, 138, 0.46),
-      rgba(232, 56, 25, 0.46)
-    ),
-    url("../../assets/GSFC_20171208_Archive_e001894_orig.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: 0.2s ease;
+
+
+.DisplayMain {
+  background-color: #7f8a8f;
+  background-image: url("../../assets/asfalt-light.png");
+
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
+

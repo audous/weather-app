@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
 import Nasa from '../nasa/Nasa'
+import Weather from '../weather/Weather';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,20 +21,21 @@ export default function FullWidthGrid() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div  className="DisplayMain" >
+    <div className={classes.root} style={{padding:'20px', margin:'20px',}}>
       <Grid container spacing={3}>
-        <Grid item xs={12}>
+        <Grid item xs={12} >
           <Paper className={classes.paper}>
             <h1>Trusted Context</h1>
             <p>Here is your content</p>
           </Paper>
         </Grid>
-
+        
         <Grid item xs={12} sm={8}>
           <Paper className={classes.paper}><Nasa /></Paper>
         </Grid>
         <Grid item xs={6} sm={4}>
-          <Paper className={classes.paper}>xs=6 sm=4</Paper>
+          <Paper className={classes.paper}><Weather /></Paper>
         </Grid>
         <Grid item xs={6} sm={4}>
           <Paper className={classes.paper}>xs=6 sm=3</Paper>
@@ -55,6 +57,7 @@ export default function FullWidthGrid() {
         </Grid>
 
       </Grid>
+    </div>
     </div>
   );
 }

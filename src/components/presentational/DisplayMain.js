@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import './ViewStyle.css';
 
-import WeatherView from './WeatherView';
+import Weather from '../weather/Weather';
 import Nasa from '../nasa/Nasa';
 
 import FullWidthGrid from '../base/FullWidthGrid';
@@ -18,14 +18,14 @@ export default function DisplayMain() {
       <Route exact path="/" render={props=>(
         <React.Fragment>
           
-          <FullWidthGrid />
+          <FullWidthGrid/>
           
         </React.Fragment>
       )} />
 
       <Route exact path="/weather" render={props=>(
         <React.Fragment>
-          <WeatherView />
+          <Weather />
         </React.Fragment>
       )} />
 

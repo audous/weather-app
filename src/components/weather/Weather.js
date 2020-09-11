@@ -36,7 +36,7 @@ export default function Weather() {
           ? weather.main.temp > 18
             ? "App hot"
             : "App cold"
-          : "App"
+          : ""
       }
     >
       <main>

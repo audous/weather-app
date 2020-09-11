@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import keys from "./keys";
 import './NasaStyle.css';
-import {Box} from '@material-ui/core';
+
+import NasaView from './NasaView';
 
 var nasaFetch = keys.NASA_BASE_URL+'apod?api_key='+keys.NASA_API_KEY;
 nasaFetch = nasaFetch.toString();
@@ -53,29 +54,7 @@ export default class Nasa extends Component {
       return <div>Loading...</div>;
     } else {
       return (
-
-      <div style={{ width: '100%' }}>
-        <Box
-          display="flex"
-          flexWrap="nowrap"
-          p={1}
-          m={2}
-          bgcolor="grey.300" 
-          justifyContent="center"
-        >
-          <Box p={1} alignSelf="center" width="33%" flexWrap="wrap">
-          <div style={{ width: '100%' }}>
-            <a href={url}><img src={url} alt="nasa apod" style={{maxWidth:"100%"}}/></a>
-          </div>
-          </Box>
-          <Box p={1} justifyContent="center" alignSelf="center" width="66%" flexWrap="wrap">
-            <h1>NASA Image of the Day </h1>
-            <h5>{copyright}</h5>
-            <p>{explanation} </p>
-          </Box>
-        </Box>
-      </div>
-
+       <NasaView url={url} copyright={copyright} explanation={explanation}/>
       );
     }
   }
