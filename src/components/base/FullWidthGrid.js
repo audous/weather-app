@@ -5,6 +5,8 @@ import Grid from '@material-ui/core/Grid';
 
 import Nasa from '../nasa/Nasa'
 import Weather from '../weather/Weather';
+import Covid from '../covid/Covid';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -13,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     textAlign: 'center',
-    color: theme.palette.text.secondary,
+    color: 'dark-grey',
   },
 }));
 
@@ -36,7 +38,8 @@ export default function FullWidthGrid() {
           <Paper className={classes.paper}><Nasa /></Paper>
         </Grid>
 
-        <Grid item xs={6} sm={4}>
+
+        <Grid item xs={12} sm={4} >
           <Paper className={classes.paper}><h2>Table of Contents</h2>
             <h4>This paper includes the content listed below.</h4>
             <ol>
@@ -57,24 +60,28 @@ export default function FullWidthGrid() {
               <li>Game and/or Crosswords</li>
             </ol>
           </Paper>
+          
         </Grid>
 
+        
         <Grid item xs={6} sm={4}>
           <Paper className={classes.paper}><Weather /></Paper>
         </Grid>
+
+
+
+
         <Grid item xs={6} sm={4}>
           <Paper className={classes.paper}>PLACEHOLDER_Positive: Let kindness be your motivation.</Paper>
         </Grid>
-        <Grid item xs={6} sm={4}>
-          <Paper className={classes.paper}>PLACEHOLDER_COVID</Paper>
-        </Grid>
 
+        
         <Grid item xs={6} sm={4}>
           <Paper className={classes.paper}>PLACEHOLDER_Comic</Paper>
         </Grid>
 
 
-        <Grid item xs={12} sm={8}>
+        <Grid item xs={12} sm={8} >
           <Paper className={classes.paper}>PLACEHOLDER_GAME_OR_CROSSWORD</Paper>
         </Grid>
 
@@ -93,8 +100,12 @@ export default function FullWidthGrid() {
         </Grid>
 
         <Grid item xs={12}>
+          <Paper className={classes.paper}><Covid/></Paper>
+        </Grid>
+        
+        <Grid item xs={12}>
           <Paper className={classes.paper}>
-            <p>Thank you for exploring this demo application. This is a React front end that is connecting to multiple back ends to shpowcase different frameworks and programming techniques.</p>
+            <p>Thank you for exploring this demo application. This is a React front end that is connecting to multiple back ends to showcase different frameworks and programming techniques.</p>
             <p>PLACEHOLDER_Credits</p>
           </Paper>
         </Grid>
