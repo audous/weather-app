@@ -1,9 +1,32 @@
 
+/**
+ * colors https://visme.co/blog/website-color-schemes/ #7 Stylish and Sophisticated 
+ * #5D5C61
+ * #379683
+ * #7395AE
+ * #557A95
+ * #B1A296
+ */
 
 .DisplayMain {
-  background-color: #7f8a8f;
-  background-image: url("../../assets/asfalt-light.png");
-
+  background: linear-gradient(rgba(85, 122, 149, .9), rgba(0, 0, 0, 0.5)), url('../../assets/GSFC_20171208_Archive_e001894_orig.jpg');
+    
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
+/* to do remove this class othertechniquesremovelater
+.othertechniquesremovelater {
+  background-color: #557A95;
+  background-image: url("../../assets/asfalt-light.png");
+
+  background-image: linear-gradient(
+    to right,
+    rgba(85, 122, 149, .9),
+    rgba(85, 122, 149, .1)
+  ),
+  url("../../assets/GSFC_20171208_Archive_e001894_orig.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s ease;
+
+} */

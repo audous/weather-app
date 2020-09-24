@@ -7,7 +7,14 @@ import Nasa from '../nasa/Nasa'
 import Weather from '../weather/Weather';
 import Covid from '../covid/Covid';
 
-
+/**
+ * colors https://visme.co/blog/website-color-schemes/ #7 Stylish and Sophisticated 
+ * #5D5C61
+ * #379683
+ * #7395AE
+ * #557A95
+ * #B1A296
+ */
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -15,7 +22,8 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     textAlign: 'center',
-    color: 'dark-grey',
+    color: '#7395AE',
+    background:'#5D5C61'
   },
 }));
 
@@ -24,7 +32,7 @@ export default function FullWidthGrid() {
 
   return (
     <div  className="DisplayMain" >
-    <div className={classes.root} style={{padding:'20px', margin:'20px',}}>
+    <div className={classes.root} >
       <Grid container spacing={3}>
 
         <Grid item xs={12} >
