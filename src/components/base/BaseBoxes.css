@@ -1,0 +1,8 @@
+.baseContainer {
+  display: flex;
+  width: 100%;
+}
+
+.baseColumn {
+  flex: 1;
+}

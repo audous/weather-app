@@ -5,7 +5,7 @@ import './ViewStyle.css';
 import Weather from '../weather/Weather';
 import Nasa from '../nasa/Nasa';
 
-import FullWidthGrid from '../base/FullWidthGrid';
+import ThreeColumnLayout from '../ThreeColumnLayout/ThreeColumnLayout';
 
 /**
  * This is the view organization component. Handle each main component view and routing here.
@@ -18,7 +18,15 @@ export default function DisplayMain() {
       <Route exact path="/" render={props=>(
         <React.Fragment>
           
-          <FullWidthGrid/>
+          <ThreeColumnLayout/>
+          
+        </React.Fragment>
+      )} />
+
+      <Route exact path="/ThreeColumnLayout" render={props=>(
+        <React.Fragment>
+          
+          <ThreeColumnLayout/>
           
         </React.Fragment>
       )} />
