@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
+import Button from '@material-ui/core/Button';
 
 import Nasa from '../nasa/Nasa'
 import Weather from '../weather/Weather';
@@ -40,6 +41,9 @@ export default function FullWidthGrid() {
               <div style={{textAlign:'center'}}>
                 <h1 style={{color:'#FDBA11'}}>Trusted Context</h1>
                 <p style={{color:'#FDBA11'}}>Here is your content. This website is a work in progress and is for demoing purposes only at the moment. Features may not be complete. More to come...</p>
+                <Box p={1} id="btndance">
+        <Button color="secondary" >Sign Me Up!</Button>
+        </Box>
               </div>
             </Grid>
             

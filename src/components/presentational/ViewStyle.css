@@ -8,6 +8,16 @@
  * #B1A296
  */
 
+ 
+/**
+ * colors from apod images
+ * #
+ * #
+ * #
+ * #
+ * #
+ */
+
 .DisplayMain {
   background: linear-gradient(rgba(85, 122, 149, .9), rgba(0, 0, 0, 0.5)), url('../../assets/GSFC_20171208_Archive_e001894_orig.jpg');
     
